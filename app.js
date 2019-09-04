@@ -19,7 +19,8 @@ const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 
 // Подключаем статику
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));  
+///home/kayday/Elbrus/lections/phase-1/beavers-express/express-skeleton/public
 
 // Подключаем views(hbs)
 app.set('views', path.join(__dirname, 'views'));
