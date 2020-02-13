@@ -1,23 +1,180 @@
+
+{{!-- <h1>{{title}}</h1>
+<p>Welcome to {{title}}</p> --}}
+
+<div class="container bootstrap snipets">
+   <h1 class="text-center text-muted">Phones</h1>
+   <div class="row flow-offset-1">
+      {{#each objItem}}
+     <div class="col-xs-8 col-md-6">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></a>
+         <div class="caption"><a href="#">{{this.name}}</a>
+          <div  style="width: 20rem;> <span class="price">
+             Цена: {{this.price}} Руб</span></div>
+             <input name='{{this.name}}' class="radio" type="radio" value="1" onMouseDown="this.isChecked=this.checked;"
+                       onClick="this.checked=!this.isChecked;"  >
+         </div>
+       </div>
+     </div>
+      {{/each}}
+     
+         {{#each objItem}}
+     <div class="col-xs-8 col-md-6">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></a>
+         <div class="caption"><a href="#">{{this.name}}</a>
+          <div  style="width: 20rem;> <span class="price">
+             Цена: {{this.price}} Руб</span></div>
+             <input name='{{this.name}}' class="radio" type="radio" value="1" onMouseDown="this.isChecked=this.checked;"
+                       onClick="this.checked=!this.isChecked;"  >
+         </div>
+       </div>
+     </div>
+      {{/each}}
+        {{#each objItem}}
+     <div class="col-xs-8 col-md-6">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></a>
+         <div class="caption"><a href="#">{{this.name}}</a>
+          <div  style="width: 20rem;> <span class="price">
+             Цена: {{this.price}} Руб</span></div>
+             <input name='{{this.name}}' class="radio" type="radio" value="1" onMouseDown="this.isChecked=this.checked;"
+                       onClick="this.checked=!this.isChecked;"  >
+         </div>
+       </div>
+     </div>
+      {{/each}}
+ 
+   </div>
+ </div>
+
+{{!-- table --}}
+<div class="container">
+  <div class="btn-group btn-group-toggle mg-auto mt-2 mb-2" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Все характеристики
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Только различия
+  </label>
+</div>
+{{#each objItem}}
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></th>
+        <th scope="col"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></th>
+        <th scope="col"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></th>
+        <th scope="col"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></th>
+        <th scope="col"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></th>
+       
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Название</th>
+        <td>{{this.name}}></td>
+        <td>{{this.name}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.name}}</td>
+        
+       
+      </tr>
+      <tr>
+        <th scope="row">Камера</th>
+        <td>{{this.cameraResolution}}</td>
+        <td>{{this.cameraResolution}}</td>
+        <td>{{this.cameraResolution}}</td>
+        <td>{{this.cameraResolution}}</td>
+        <td>{{this.cameraResolution}}</td>
+        
+       
+      </tr>
+      <tr>
+        <th scope="row">Цена</th>
+        <td>{{this.price}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.price}}</td>
+       
+      </tr>
+      <tr>
+        <th scope="row">Память</th>
+        <td>{{this.internalMemory}}</td>
+        <td>{{this.internalMemory}}</td>
+        <td>{{this.internalMemory}}</td>
+        <td>{{this.internalMemory}}</td>
+        <td>{{this.internalMemory}}</td>
+       
+       
+      </tr>
+        <tr>
+        <th scope="row">RAM</th>
+        <td>{{this.RAM}}</td>
+        <td>{{this.RAM}}</td>
+        <td>{{this.RAM}}</td>
+        <td>{{this.RAM}}</td>
+        <td>{{this.RAM}}</td>
+       
+       
+      </tr>
+        <tr>
+        <th scope="row">Размер</th>
+        <td>{{this.size}}</td>
+        <td>{{this.size}}</td>
+        <td>{{this.size}}</td>
+        <td>{{this.size}}</td>
+        <td>{{this.size}}</td>
+      
+       
+      </tr>
+       <tr>
+        <th scope="row">Гарантия</th>
+        <td>{{this.guarantee}}</td>
+        <td>{{this.guarantee}}</td>
+        <td>{{this.guarantee}}</td>
+        <td>{{this.guarantee}}</td>
+        <td>{{this.guarantee}}</td>
+      
+       
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+ {{/each}}
+{{!-- table-hover --}}
+{{#each objItem}}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{{this.img}} alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{this.img}} alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{this.img}} alt="Third slide">
+    </div>
+  </div>
+</div>
+ {{/each}}
+
+{{!-- 
 <p style="text-align: center"><button class="showAll">Кнопка с текстом</button></p>
 
 
 
-
-
-
-
-
-
-
-
-
+<p style="text-align: center">
+    <button class="showAll">Кнопка с текстом</button>
+</p>
 
 <form type='submit'>
     <button class='start'>Poehali</button>
-
-
     <div class="result">
-
         <ul>
             {{#each objItem}}
                 <li>
@@ -32,10 +189,12 @@
                 <li class="all secondary invisible">{{this.internalMemory}}</li>
                 <li class="all secondary invisible">{{this.RAM}}</li>
                 </li>
-                <input name='{{this.name}}' class="radio" type="radio" value="1" onMouseDown="this.isChecked=this.checked;"
-                       onClick="this.checked=!this.isChecked;"  >Сравнить
+                <input name='{{this.name}}' class="radio" type="radio" value="1"
+                       onMouseDown="this.isChecked=this.checked;"
+                       onClick="this.checked=!this.isChecked;">Сравнить
             {{/each}}
         </ul>
-
     </div>
-</form>
+</form> --}}
+
+<!--Carousel Wrapper-->
