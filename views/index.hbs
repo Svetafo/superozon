@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
@@ -159,3 +160,46 @@
 {{!-- table-hover --}}
 
 
+=======
+<p style="text-align: center"><button class="showAll">Кнопка с текстом</button></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form type='submit'>
+    <button class='start'>Poehali</button>
+
+
+    <div class="result">
+
+        <ul>
+            {{#each objItem}}
+                <li>
+                    <img src="{{this.img}}" alt="альтернативный текст">
+                <li class="all firstly">{{this.name}}</li>
+                <li class="all firstly">{{this.price}}</li>
+                <li class="all firstly">{{this.guarantee}}</li>
+                <li class="all firstly">{{this.screenResolution}}</li>
+                <li class="all secondary invisible">{{this.screenDiagonale}}</li>
+                <li class="all secondary invisible">{{this.size}}</li>
+                <li class="all secondary invisible">{{this.cameraResolution}}</li>
+                <li class="all secondary invisible">{{this.internalMemory}}</li>
+                <li class="all secondary invisible">{{this.RAM}}</li>
+                </li>
+                <input name='{{this.name}}' class="radio" type="radio" value="1" onMouseDown="this.isChecked=this.checked;"
+                       onClick="this.checked=!this.isChecked;"  >Сравнить
+            {{/each}}
+        </ul>
+
+    </div>
+</form>
+>>>>>>> f41a0ece83206df70324dcd83e6edb674bd58a99

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+
 const ItemSchema = new Schema({
     img: String,
     name: String,
@@ -12,4 +13,9 @@ const ItemSchema = new Schema({
     internalMemory: String,
     RAM: String
 });
+
+
+
 module.exports = mongoose.model('Item', ItemSchema);
+
+
