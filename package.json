@@ -2,26 +2,4 @@
   "name": "superozon",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Svetafo/superozon.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Svetafo/superozon/issues"
-  },
-  "homepage": "https://github.com/Svetafo/superozon#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "hbs": "^4.1.0",
-    "mongoose": "^5.8.12",
-    "morgan": "^1.9.1"
-  }
 }
