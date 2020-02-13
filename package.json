@@ -2,15 +2,25 @@
   "name": "express-intro",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
+    "start": "npx nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.3",
+    "mongoose": "^5.8.12",
     "morgan": "^1.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Svetafo/express-skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Svetafo/express-skeleton/issues"
+  },
+  "homepage": "https://github.com/Svetafo/express-skeleton#readme"
 }
