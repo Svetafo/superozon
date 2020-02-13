@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npx nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,6 +12,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.3",
+    "mongoose": "^5.8.12",
     "morgan": "^1.9.1"
   }
 }

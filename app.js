@@ -6,6 +6,10 @@ const app = express();
 const morgan = require("morgan");
 app.use(morgan("dev"));
 
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const Item = require('./model/itemModel');
+
 const path = require('path');
 
 // Обработка POST запросов.
@@ -29,6 +33,24 @@ app.set('view engine', 'hbs');
 // Подключаем импортированные маршруты с определенным url префиксом.
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+mongoose.connect("mongodb+srv://artem:artem@cluster0-nnm84.mongodb.net/ozonItems", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+
+
+app.get('/', async function (req, res) {
+  let objItem = await Item.find({});
+  // console.log(objItem);
+  res.render('index', {
+    objItem
+  });
+});
+
+
+
 
 // Обработка ошибок.
 app.use((req, res, next) => {
