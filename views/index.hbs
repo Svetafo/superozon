@@ -1,23 +1,9 @@
-<p style="text-align: center"><button class="showAll">Кнопка с текстом</button></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p style="text-align: center">
+    <button class="showAll">Кнопка с текстом</button>
+</p>
 <form type='submit'>
     <button class='start'>Poehali</button>
-
-
     <div class="result">
-
         <ul>
             {{#each objItem}}
                 <li>
@@ -32,10 +18,10 @@
                 <li class="all secondary invisible">{{this.internalMemory}}</li>
                 <li class="all secondary invisible">{{this.RAM}}</li>
                 </li>
-                <input name='{{this.name}}' class="radio" type="radio" value="1" onMouseDown="this.isChecked=this.checked;"
-                       onClick="this.checked=!this.isChecked;"  >Сравнить
+                <input name='{{this.name}}' class="radio" type="radio" value="1"
+                       onMouseDown="this.isChecked=this.checked;"
+                       onClick="this.checked=!this.isChecked;">Сравнить
             {{/each}}
         </ul>
-
     </div>
 </form>
