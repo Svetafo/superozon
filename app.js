@@ -2,9 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const app = express();
+
 const morgan = require("morgan");
-const Schema = mongoose.Schema;
-const jsonParser = express.json();
 app.use(morgan("dev"));
 
 const Item = require("./model/itemModel");
