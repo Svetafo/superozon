@@ -1,0 +1,18 @@
+<div class="container bootstrap snipets">
+   <h1 class="text-center text-muted">Phones</h1>
+   <div class="row flow-offset-1">
+      {{#each objItem}}
+     <div class="col-xs-8 col-md-6">
+       <div class="product tumbnail thumbnail-3"><a href="#"><img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></a>
+         <div class="caption"><a href="#">{{this.name}}</a>
+          <div  style="width: 20rem;> <span class="price">
+             Цена: {{this.price}} Руб</span></div>
+             <input name='{{this.name}}' class="radio" type="radio" value="1" onMouseDown="this.isChecked=this.checked;"
+                       onClick="this.checked=!this.isChecked;"  >
+         </div>
+       </div>
+     </div>
+      {{/each}}
+
+
+      

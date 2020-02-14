@@ -34,7 +34,7 @@ app.get("/test", (req, res) => {
 
 app.get("/", async function(req, res) {
   let objItem = await Item.find({});
-  // console.log(objItem);
+  console.log(objItem, 'first');
   res.render("index", {
     objItem
   });
@@ -60,20 +60,20 @@ app.set("view engine", "hbs");
 // app.use("/users", usersRouter);
 
 mongoose.connect(
-  "mongodb+srv://artem:artem@cluster0-nnm84.mongodb.net/ozonItems",
+  "mongodb+srv://artem:artem@cluster0-nnm84.mongodb.net/ozon",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
   }
 );
 
-app.get("/", async function(req, res) {
-  let objItem = await Item.find({});
-  // console.log(objItem);
-  res.render("index", {
-    objItem
-  });
-});
+// app.get("/", async function(req, res) {
+//   let objItem = await Item.find({});
+//   console.log(objItem, 'here');
+//   res.render("index", {
+//     objItem
+//   });
+// });
 
 // Обработка ошибок.
 app.use((req, res, next) => {

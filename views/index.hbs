@@ -1,5 +1,5 @@
 <div class="container bootstrap snipets">
-   <h1 class="text-center text-muted">Phones</h1>
+   <h1 class="text-center text-muted">Телефоны</h1>
    <div class="row flow-offset-1">
       {{#each objItem}}
      <div class="col-xs-8 col-md-6">
@@ -143,54 +143,29 @@
 </div>
  {{/each}}
 {{!-- table-hover --}}
-{{#each objItem}}
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="{{this.img}} alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{this.img}} alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{this.img}} alt="Third slide">
-    </div>
-  </div>
-</div>
- {{/each}}
-
-
-<p style="text-align: center"><button class="showAll">Кнопка с текстом</button></p>
 
 
 
-<p style="text-align: center">
-    <button class="showAll">Кнопка с текстом</button>
-</p>
 
-<form type='submit'>
-    <button class='start'>Poehali</button>
-    <div class="result">
-        <ul>
+
+        
             {{#each objItem}}
-                <li>
-                    <img src="{{this.img}}" alt="альтернативный текст">
+               
+                  <br>  <img style="max-width:350px; max-height:350px" src="{{this.img}}" alt=""></br>
                 <li class="all firstly">{{this.name}}</li>
-                <li class="all firstly">{{this.price}}</li>
-                <li class="all firstly">{{this.guarantee}}</li>
-                <li class="all firstly">{{this.screenResolution}}</li>
-                <li class="all secondary invisible">{{this.screenDiagonale}}</li>
-                <li class="all secondary invisible">{{this.size}}</li>
-                <li class="all secondary invisible">{{this.cameraResolution}}</li>
-                <li class="all secondary invisible">{{this.internalMemory}}</li>
-                <li class="all secondary invisible">{{this.RAM}}</li>
+                <li class="all firstly">Цена: {{this.price}}</li>
+                <li class="all firstly">Гарантия: {{this.guarantee}}</li>
+                <li class="all firstly">Разрешение: {{this.screenResolution}}</li>
+                <li class="all secondary invisible">Диагональ экрана: {{this.screenDiagonale}}</li>
+                <li class="all secondary invisible">Размер: {{this.size}}</li>
+                <li class="all secondary invisible">Камера: {{this.cameraResolution}}</li>
+                <li class="all secondary invisible">Память: {{this.internalMemory}}</li>
+                <li class="all secondary invisible">RAM: {{this.RAM}}</li>
                 </li>
-                <input name='{{this.name}}' class="radio" type="radio" value="1"
-                       onMouseDown="this.isChecked=this.checked;"
-                       onClick="this.checked=!this.isChecked;">Сравнить
+         
             {{/each}}
         </ul>
-    </div>
-</form> --}}
+
 
 <!--Carousel Wrapper-->
+
