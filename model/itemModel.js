@@ -11,7 +11,9 @@ const ItemSchema = new Schema({
     size: String,
     cameraResolution: Number,
     internalMemory: String,
-    RAM: String
+    RAM: String,
+    rating: Number,
+    color: Array,
 });
 
 
